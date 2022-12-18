@@ -50,10 +50,9 @@ for i in range(num_i):
   w0, w1, w2 = train(0, 1, 1, w0, w1, w2, learning_rate)
   w0, w1, w2 = train(1, 0, 1, w0, w1, w2, learning_rate)
   w0, w1, w2 = train(1, 1, 1, w0, w1, w2, learning_rate)
-
+  print(f"w0 = {w0}, w1 = {w1}, w2 = {w2}")
 # Test OR_gate
-print(f"w0 = {w0}, w1 = {w1}, w2 = {w2}")
-print(or_gate(0, 0, w0, w1, w2)) # Output: 0
-print(or_gate(0, 1, w0, w1, w2)) # Output: 1
-print(or_gate(1, 0, w0, w1, w2)) # Output: 1
-print(or_gate(1, 1, w0, w1, w2)) # Output: 1
+  print(or_gate(0, 0, w0, w1, w2)) # Output: 0
+  print(or_gate(0, 1, w0, w1, w2)) # Output: 1
+  print(or_gate(1, 0, w0, w1, w2)) # Output: 1
+  print(or_gate(1, 1, w0, w1, w2)) # Output: 1
